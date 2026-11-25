@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aiko Vixen | AI Model</title>
+<meta name="description" content="Come talk to me, baby. Svi moji profili na jednom mjestu.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,600&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --wine: #2a0c1c;
+    --plum: #4a1432;
+    --rose: #ff5c8a;
+    --blush: #ffe3ea;
+    /* Slike: stavi background.jpg i profile.jpg u isti folder kao index.html */
+    --bg-image: url("background.jpg");
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { min-height: 100%; }
+  body {
+    font-family: "Manrope", system-ui, sans-serif;
+    color: var(--blush);
+    background:
+      linear-gradient(180deg, rgba(42,12,28,.55) 0%, rgba(42,12,28,.88) 100%),
+      var(--bg-image) center / cover no-repeat fixed,
+      radial-gradient(circle at 30% 10%, var(--plum), var(--wine) 70%);
+    padding: max(32px, env(safe-area-inset-top)) 20px max(32px, env(safe-area-inset-bottom));
+    display: flex; justify-content: center; align-items: flex-start;
+  }
+  main { width: 100%; max-width: 420px; text-align: center; }
+
+  .avatar {
+    display: block; width: 190px; height: 190px; border-radius: 50%;
+    margin: 12px auto 20px; object-fit: cover;
+    filter: drop-shadow(0 16px 32px rgba(0,0,0,.55)) drop-shadow(0 0 18px rgba(255,92,138,.35));
+  }
+
+  h1 { font: italic 600 40px/1.1 "Fraunces", serif; letter-spacing: .01em; }
+  .badge {
+    display: inline-block; margin-top: 10px; padding: 4px 12px;
+    border: 1px solid rgba(255,227,234,.4); border-radius: 999px;
+    font-size: 13px; color: var(--blush);
+  }
+  .tagline {
+    margin: 22px 0 8px; font: italic 600 24px/1.25 "Fraunces", serif; color: var(--rose);
+  }
+  .bio { font-size: 15px; line-height: 1.6; opacity: .9; max-width: 34ch; margin: 0 auto 28px; }
+
+  .links { display: grid; gap: 12px; }
+  .links a {
+    display: flex; flex-direction: column; align-items: flex-start; gap: 2px;
+    padding: 14px 20px; border-radius: 16px; text-decoration: none; color: var(--blush);
+    background: rgba(255,227,234,.09); border: 1px solid rgba(255,227,234,.2);
+    backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+    transition: transform .15s ease, background .15s ease;
+  }
+  .links a small { font-size: 13px; opacity: .75; }
+  .links a strong { font-size: 17px; }
+  .links a:hover { transform: translateY(-2px); background: rgba(255,227,234,.16); }
+  .links a.primary { background: linear-gradient(135deg, var(--rose), #ff8a5c); border: 0; color: #2a0c1c; }
+  .links a.primary small { opacity: .8; }
+  .links a:focus-visible { outline: 3px solid var(--blush); outline-offset: 3px; }
+
+  footer { margin-top: 32px; font-size: 12px; line-height: 1.6; opacity: .65; }
+  @media (prefers-reduced-motion: reduce) { .links a { transition: none; } }
+</style>
+</head>
+<body>
+<main>
+  <img class="avatar" src="profile.png" alt="Aiko Vixen" width="320" height="320">
+
+  <h1>Aiko Vixen</h1>
+  <span class="badge">AI generirani model</span>
+
+  <p class="tagline">Come talk to me, baby 💋</p>
+  <p class="bio">Dobrodošli! Ovdje pronađi sve moje profile i najnoviji sadržaj. Prati me i javi se.</p>
+
+  <nav class="links">
+    <a class="primary" href="https://www.fanvue.com/aiko.vixen"><strong>Fanvue</strong><small>Ekskluzivni sadržaj</small></a>
+    <a href="https://www.instagram.com/aiko.vixen"><strong>Instagram</strong><small>Fotografije i storyji</small></a>
+    <a href="https://www.tiktok.com/@aiko.vixen"><strong>TikTok</strong><small>Kratki videi</small></a>
+    <a href="https://www.facebook.com/aiko.vixen"><strong>Facebook</strong><small>Novosti i zajednica</small></a>
+  </nav>
+
+  <footer>Ovaj model i sav sadržaj generirani su umjetnom inteligencijom.<br>© 2026 Aiko Vixen</footer>
+</main>
+</body>
+</html>
